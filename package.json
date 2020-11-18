@@ -76,7 +76,9 @@
     "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-lint css-compile css-prefix\"",
     "watch-css-docs": "nodemon --watch site/assets/scss/ --ext scss --exec \"npm run css-lint\"",
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm-run-all js-lint js-compile\"",
-    "watch-js-docs": "nodemon --watch site/assets/js/ --ext js --exec \"npm run js-lint\""
+    "watch-js-docs": "nodemon --watch site/assets/js/ --ext js --exec \"npm run js-lint\"",
+    "storybook": "start-storybook -p 6006 --no-dll",
+    "build-storybook": "build-storybook --no-dll"
   },
   "style": "dist/css/boosted.css",
   "sass": "scss/boosted.scss",
@@ -90,7 +92,9 @@
     "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/issues"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@storybook/addon-knobs": "^6.1.0"
+  },
   "peerDependencies": {
     "popper.js": "^1.16.1"
   },
@@ -101,9 +105,16 @@
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
+    "@storybook/addon-a11y": "^6.1.1",
+    "@storybook/addon-actions": "^6.1.0",
+    "@storybook/addon-essentials": "^6.1.0",
+    "@storybook/addon-links": "^6.1.0",
+    "@storybook/html": "^6.1.0",
     "autoprefixer": "^10.0.2",
+    "babel-loader": "^8.2.1",
     "bundlewatch": "^0.3.1",
     "clean-css-cli": "^4.3.0",
+    "core-js": "^3.7.0",
     "cross-env": "^7.0.2",
     "delay-cli": "^1.1.0",
     "eslint": "^7.13.0",
@@ -135,6 +146,7 @@
     "popper.js": "^1.16.1",
     "postcss": "^8.1.6",
     "postcss-cli": "^8.2.0",
+    "react-is": "^17.0.1",
     "rollup": "^2.33.1",
     "rollup-plugin-istanbul": "^2.0.1",
     "sass": "^1.29.0",
