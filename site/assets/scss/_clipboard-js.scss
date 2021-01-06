@@ -9,6 +9,8 @@
 
   + .highlight {
     margin-top: 0;
+    background-color: $black; // Boosted mod
+    border-color: $black; // Boosted mod
   }
 
   @include media-breakpoint-up(md) {

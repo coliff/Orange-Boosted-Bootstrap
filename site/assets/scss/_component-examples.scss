@@ -8,8 +8,8 @@
     > [class^="col-"] {
       padding-top: .75rem;
       padding-bottom: .75rem;
-      background-color: tint-color($info, 11); // Boosted mod
-      border: 1px solid tint-color($info, 6); // Boosted mod
+      background-color: tint-color($info, 10%); // Boosted mod
+      border: 1px solid tint-color($info, 60%); // Boosted mod
     }
   }
 
@@ -20,12 +20,12 @@
 
 .bd-example-row-flex-cols .row {
   min-height: 10rem;
-  background-color: tint-color($info, 11); // Boosted mod
+  background-color: tint-color($info, 10%); // Boosted mod
 }
 
 .bd-highlight {
-  background-color: tint-color($info, 11); // Boosted mod
-  border: 1px solid tint-color($info, 6); // Boosted mod
+  background-color: tint-color($info, 10%); // Boosted mod
+  border: 1px solid tint-color($info, 60%); // Boosted mod
 }
 
 // Grid mixins
@@ -293,7 +293,7 @@
 
   pre code {
     @include font-size(inherit);
-    color: $gray-800; // Effectively the base text color
+    color: $gray-500; // Effectively the base text color
     word-wrap: normal;
     @include transition(color .15s ease-in);
   }
@@ -305,7 +305,7 @@
   pre:focus .language-js,
   pre:hover .language-html,
   pre:focus .language-html {
-    color: $black;
+    color: $white;
   }
 
   .table-typography & {
